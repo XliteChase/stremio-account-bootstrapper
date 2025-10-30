@@ -12,6 +12,7 @@ import Footer from './components/Footer.vue';
 import Authentication from './components/Authentication.vue';
 import Backup from './components/Backup.vue';
 import Notifications from './components/Notifications.vue';
+import AddonReorder from './components/AddonReorder.vue';
 
 const { t } = useI18n();
 
@@ -39,6 +40,7 @@ function setAuthKey(key) {
     <Summary />
     <Authentication @auth-key="setAuthKey" />
     <Backup :stremioAuthKey="stremioAuthKey" />
+    <AddonReorder :stremioAuthKey="stremioAuthKey" />
     <Configuration :stremioAuthKey="stremioAuthKey" />
     <FAQ />
     <ThankYou />
